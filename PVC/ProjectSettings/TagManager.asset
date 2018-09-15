@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: UnicornLayer
+    uniqueID: 3471841161
+    locked: 0
+  - name: Cannonball
+    uniqueID: 936516655
+    locked: 0
+  - name: CreepLayer
+    uniqueID: 781635481
+    locked: 0
+  - name: PrincessLayer
+    uniqueID: 2582864695
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: CannonLayer
+    uniqueID: 2950758001
+    locked: 0
+  - name: CannonBase
+    uniqueID: 2216404767
+    locked: 0
