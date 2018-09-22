@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="38.869057mm"
+   height="38.869057mm"
+   viewBox="0 0 137.725 137.725"
+   id="svg18076"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="button_restart.svg"
+   inkscape:export-filename="D:\PVC\graphics_png\button_restart.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs18078" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="41.88069"
+     inkscape:cy="8.9664972"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata18081">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-300.85343,-277.40307)">
+    <g
+       transform="translate(-2541.8893,-966.09661)"
+       id="g9030">
+      <circle
+         r="63.862499"
+         cy="1312.3622"
+         cx="2911.6052"
+         id="circle8985"
+         style="fill:#d4aa00;fill-opacity:1;fill-rule:evenodd;stroke:#554400;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path8991"
+         d="m 2916.0799,1274.3008 13.3327,23.0921 3.8,-3.8002 a 27.523502,30.581667 0 0 1 6.0383,19.0415 27.523502,30.581667 0 0 1 -27.5238,30.5824 27.523502,30.581667 0 0 1 -27.5239,-30.5824 27.523502,30.581667 0 0 1 19.6148,-29.2642 l 0,-8.1219 a 38.227084,38.227084 0 0 0 -30.318,37.3861 38.227084,38.227084 0 0 0 38.2271,38.2271 38.227084,38.227084 0 0 0 38.2271,-38.2271 38.227084,38.227084 0 0 0 -10.0614,-25.7215 l 4.7887,-4.7886 -6.5874,-1.9224 -22.0142,-5.9009 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

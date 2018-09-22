@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG_Bottom
+    uniqueID: 2781917593
+    locked: 0
+  - name: BG_Top3
+    uniqueID: 3174127831
+    locked: 0
+  - name: BG_Top2
+    uniqueID: 585525765
+    locked: 0
+  - name: BG_Top1
+    uniqueID: 3778217193
+    locked: 0
   - name: UnicornLayer
     uniqueID: 3471841161
     locked: 0
