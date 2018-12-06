@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1627320663142544}
+  m_IsPrefabAsset: 1
+--- !u!1 &1627320663142544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4911724916205488}
+  - component: {fileID: 114259411952059520}
+  m_Layer: 0
+  m_Name: GameMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4911724916205488
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627320663142544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.39072868, y: 0.14272577, z: 0.12795609}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114259411952059520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627320663142544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423b4c41ba3829b41a77cc0ac735f744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOn: 0
+  Creep: {fileID: 1458849854160074, guid: 09f58a4d2a7a28447b1e4960c5fc72dd, type: 2}
+  Princess: {fileID: 0}
+  Cannon: {fileID: 1537178983522180, guid: eafd265e5ccb5914a9567027de8d0d4a, type: 2}
+  MenuStart: {fileID: 1749185489570370, guid: 2d64af0bda1ee1d4cb4e6caeacab71c3, type: 2}
+  MenuRestart: {fileID: 1423280873572492, guid: a3378708c332a32498129ee90e37516f,
+    type: 2}
+  MenuHelp: {fileID: 1595121820255850, guid: 4acacac2da4ba6548b0122c2a37a0e85, type: 2}
+  MenuYes: {fileID: 1924868045809816, guid: aa8d096de5c85764db8d61ee76cb1f6a, type: 2}
+  MenuNo: {fileID: 1430016292830304, guid: 812985aebbcb5d443ab8b5b9b2a4450e, type: 2}
+  gameStatus: 0
+  nextSpawn: 5
+  timeSpawn: 10
+  spawnDistance: 12
