@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,8 +12,9 @@ public class Creep : MonoBehaviour {
     private bool isAlive = true;
     // Direction for movement
     private Vector3 moveVector;
-    // When dying, time until destroy
+    // When dying or stealing, time until destroy and spin speed
     public float untilDisappear = 1.0f;
+    public float spinSpeed = 1000f;
 
 	// Use this for initialization
 	void Start () {
@@ -46,7 +48,7 @@ public class Creep : MonoBehaviour {
             if (untilDisappear < 0)
                 Destroy(gameObject);
             // Rotate the smoke poof while shrinking (rotation direction depends on which way Creep was moving)
-            this.transform.Rotate(0, 0, 1000 * Time.deltaTime * this.moveVector.x);
+            this.transform.Rotate(0, 0, this.spinSpeed * Time.deltaTime * this.moveVector.x);
             // Shrink and destroy the poof once it becomes small enough
             this.transform.localScale -= Vector3.one * Time.deltaTime * 1.0f;
             if (this.transform.localScale.x < 0.1f)
@@ -54,11 +56,27 @@ public class Creep : MonoBehaviour {
         }
 	}
 
-    // Collide with cannonball - die
-    void OnCollisionEnter2D(Collision2D collision)
+    // Collide trigger with cannonball - die
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        Debug.Log("Creep triggered with: " + collision.name);
+        // Die if collided with a cannonball
+        if (collision.name == "CannonballPrefab(Clone)")
+        {
             this.isAlive = false;
             anim.SetTrigger("CreepDie");
+            GameObject Counter = GameObject.Find("Counter");
+            Counter.GetComponent<TextMesh>().text = Convert.ToString(Convert.ToInt16(Counter.GetComponent<TextMesh>().text) + 1);
+            this.spinSpeed = 1000f;
+            this.untilDisappear = 1f;
+        }
+        // Steal unicorn horn if collided with a unicorn
+        else if (collision.name == "Unicorn" | collision.name == "Unicorn(Clone)")
+        {
+            this.isAlive = false;
+            anim.SetTrigger("CreepSteal");
+            this.spinSpeed = 200f;
+            this.untilDisappear = 2f;
+        }
     }
 }

@@ -15,6 +15,8 @@ public class GameMaster : MonoBehaviour {
     public GameObject MenuHelp;
     public GameObject MenuYes;
     public GameObject MenuNo;
+    // Game menu
+    public GameObject Counter;
     // Input interaction from raycast hits
     private RaycastHit hit;
     // Game status; naive state machine
@@ -71,6 +73,9 @@ public class GameMaster : MonoBehaviour {
                 // No/cross button for returning to menus
                 GameObject menuButtonNo = GameObject.Instantiate(this.MenuNo);
                 menuButtonNo.transform.position = new Vector3(7, 7, -2);
+                // Creep counter
+                GameObject counter = GameObject.Instantiate(this.Counter);
+                counter.transform.position = new Vector3(0, 8, -2);
                 break;
             // Go to the menus
             case 2:
@@ -84,6 +89,7 @@ public class GameMaster : MonoBehaviour {
                 // Naive wipe of game
                 GameObject.Destroy(GameObject.Find("CannonballPrefab(Clone)"));
                 GameObject.Destroy(GameObject.Find("CreepPrefab(Clone)"));
+                GameObject.Find("Counter").GetComponent<TextMesh>().text = "0";
                 this.gameOn = true;
                 this.gameStatus = 1;
                 // NEEDS TODO
@@ -93,6 +99,7 @@ public class GameMaster : MonoBehaviour {
                 // Clean starting menu
                 GameObject.Destroy(GameObject.Find("Button_Restart(Clone)"));
                 GameObject.Destroy(GameObject.Find("Button_No(Clone)"));
+                GameObject.Destroy(GameObject.Find("CreepCounter(Clone)"));
                 GameObject.Destroy(GameObject.Find("Cannon(Clone)"));
                 GameObject.Destroy(GameObject.Find("CreepPrefab(Clone)"));
                 this.changeGameState(0); // Fresh start
