@@ -71,7 +71,7 @@ public class Creep : MonoBehaviour {
             this.untilDisappear = 1f;
         }
         // Steal unicorn horn if collided with a unicorn
-        else if (collision.name == "Unicorn" | collision.name == "Unicorn(Clone)")
+        else if ((collision.name == "Unicorn" | collision.name == "Unicorn(Clone)") & collision.GetComponent<SpriteRenderer>().sprite.name == "unicorn_with_horn")
         {
             this.isAlive = false;
             anim.SetTrigger("CreepSteal");

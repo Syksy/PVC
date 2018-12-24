@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 50070315247190516}
   m_Layer: 0
   m_Name: CreepPrefab
-  m_TagString: Untagged
+  m_TagString: Creep
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   untilDisappear: 100
+  spinSpeed: 1000
 --- !u!212 &212548494836821902
 SpriteRenderer:
   m_ObjectHideFlags: 1

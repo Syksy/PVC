@@ -53,7 +53,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOn: 0
   Creep: {fileID: 1458849854160074, guid: 09f58a4d2a7a28447b1e4960c5fc72dd, type: 2}
-  Princess: {fileID: 0}
   Cannon: {fileID: 1537178983522180, guid: eafd265e5ccb5914a9567027de8d0d4a, type: 2}
   MenuStart: {fileID: 1749185489570370, guid: 2d64af0bda1ee1d4cb4e6caeacab71c3, type: 2}
   MenuRestart: {fileID: 1423280873572492, guid: a3378708c332a32498129ee90e37516f,
@@ -61,6 +60,9 @@ MonoBehaviour:
   MenuHelp: {fileID: 1595121820255850, guid: 4acacac2da4ba6548b0122c2a37a0e85, type: 2}
   MenuYes: {fileID: 1924868045809816, guid: aa8d096de5c85764db8d61ee76cb1f6a, type: 2}
   MenuNo: {fileID: 1430016292830304, guid: 812985aebbcb5d443ab8b5b9b2a4450e, type: 2}
+  Counter: {fileID: 1535705435723122, guid: e3e2662a0844b6f478b6038132dd6a5d, type: 2}
+  GameStatusText: {fileID: 1789217454894032, guid: 5d8008f3817a5d54e824b3cfef6184e7,
+    type: 2}
   gameStatus: 0
   nextSpawn: 5
   timeSpawn: 10

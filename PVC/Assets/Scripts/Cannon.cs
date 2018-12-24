@@ -26,8 +26,40 @@ public class Cannon : MonoBehaviour {
         spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
+    public void Turn()
+    {
+        // Start turning the cannon
+        anim.SetTrigger("Turn");
+    }
+
+    public void Shoot()
+    {
+        // Attempt to shoot
+        anim.SetTrigger("Shoot");
+        // Shoot left
+        if (spriteRenderer.sprite.name == "cannon1_left")
+        {
+            GameObject ball = GameObject.Instantiate(this.CannonBall);
+            ball.transform.position = this.leftShot;
+            Rigidbody2D rb2d = ball.GetComponent<Rigidbody2D>();
+            rb2d.AddForce(this.leftForce);
+            rb2d.AddTorque(this.leftSpin);
+        }
+        // Shoot right
+        else if (spriteRenderer.sprite.name == "cannon1_right")
+        {
+            GameObject ball = GameObject.Instantiate(this.CannonBall);
+            ball.transform.position = this.rightShot;
+            Rigidbody2D rb2d = ball.GetComponent<Rigidbody2D>();
+            rb2d.AddForce(this.rightForce);
+            rb2d.AddTorque(this.rightSpin);
+        }
+    }
+
+
+    // Update is called once per frame
+    /*
+    void Update () {
         if (Input.GetMouseButtonDown(0))
         {
             // Start turning the cannon
@@ -57,4 +89,5 @@ public class Cannon : MonoBehaviour {
             }
         }
     }
+    */
 }
